@@ -29,7 +29,7 @@
 // define('DB_HOST', $db["host"]);
 
 
-// $url=parse_url(getenv("CLEARDB_DATABASE_URL"));
+$url=parse_url(getenv("CLEARDB_DATABASE_URL"));
 
 //     mysql_connect(
 //             $server = $url["host"],
