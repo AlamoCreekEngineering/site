@@ -14,18 +14,20 @@
  * @package WordPress
  */
 
+$url=parse_url(getenv('CLEARDB_DATABASE_URL'));
+
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'database_name_here');
+define('DB_NAME', substr($url["path"],1));
 
 /** MySQL database username */
-define('DB_USER', 'username_here');
+define('DB_USER', $url["user"]);
 
 /** MySQL database password */
-define('DB_PASSWORD', 'password_here');
+define('DB_PASSWORD', $url["pass"]);
 
 /** MySQL hostname */
-define('DB_HOST', 'localhost');
+define('DB_HOST', $url["host"]);
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
@@ -42,14 +44,15 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'put your unique phrase here');
-define('SECURE_AUTH_KEY',  'put your unique phrase here');
-define('LOGGED_IN_KEY',    'put your unique phrase here');
-define('NONCE_KEY',        'put your unique phrase here');
-define('AUTH_SALT',        'put your unique phrase here');
-define('SECURE_AUTH_SALT', 'put your unique phrase here');
-define('LOGGED_IN_SALT',   'put your unique phrase here');
-define('NONCE_SALT',       'put your unique phrase here');
+
+define('AUTH_KEY',         '[rdWtIxKbAH},`Q7Xfk5oMr@{|~(gtS[C!~-1.;KSD]${}KR%BBB<#^jnTuG^{Ws');
+define('SECURE_AUTH_KEY',  'RN<9d1^da$-YTnBC,Qj~f+x,Zj?={HqU3}G99sj&>p2z*]K>D-6{Q_v~-wfJq(>>');
+define('LOGGED_IN_KEY',    'u!{:%VYY}t5].EqN{-,5aw,e,3S]|GlSDU7}-q_b8FVXSUGhmpz(8=Za-OIg:>(&');
+define('NONCE_KEY',        '`!mCjo%gl!uEEl _8o7 o:(Dt}>gX<tLyE&j1CoWF0VSFEsuGb3Y/<B~({e#Bu~]');
+define('AUTH_SALT',        '2Q^nF!_Jfg9O_$U(T,:ml]A01H1a;8Llw.Y-r699LW&T(ogW[ Jj)w!fGXEDfbI3');
+define('SECURE_AUTH_SALT', 'tj&0;4+t_H,VXM-v<YSyavU)U:a;UDQ-2P1Tv]|XP3.;D2H_W)Lzoa)UM9{}7tPC');
+define('LOGGED_IN_SALT',   'z6=tv,k_6|,R(_/-SEL&M;Ab~~+e.+p8]f<j1gEHN@K48Hj3I stA?Bb+|8d68IM');
+define('NONCE_SALT',       '=#bcpP{~8H~mZH<vSz^klw=l29b1nt!zEx=MQS!Dsw@utd`p9+Rsa@K]^Ld:_g#b');
 
 /**#@-*/
 
