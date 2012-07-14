@@ -1,0 +1,16 @@
+.tabNavigation { margin-top:15px; height: 30px; line-height: 20px; font: 13px/18px Georgia,"Times New Roman","Bitstream Charter",Times,serif }
+.tabNavigation li { float:left; }
+.tabNavigation li a { text-decoration:none; padding: 5px 13px; display: block; border: 1px solid #E3E3E3;  border-left-color: #fff; background: url( '../../../../../wp-admin/images/menu-bits.gif' ) repeat-x left -379px #F1F1F1; }
+.tabNavigation li:first-child a { border-left-color: #e3e3e3; -moz-border-radius: 6px 0 0 6px; -webkit-border-radius: 6px 0 0 6px; border-radius: 6px 0 0 6px; }
+.tabNavigation li:last-child a { -moz-border-radius: 0 6px 6px 0; -webkit-border-radius: 0 6px 6px 0; border-radius: 0 6px 6px 0; }
+.tabNavigation .ui-tabs-selected a { background: url( '../../../../../wp-admin/images/menu-bits.gif' ) repeat-x left top #E0E0E0; border-color: #aaa !important; color: #000; }
+#videos textarea, #howimadeit textarea {
+    height: 150px;
+    width: 400px;
+}
+#faq ul li {
+	list-style:disc inside none;
+}
+.form-table th {
+	padding: 0px;
+}
